@@ -1,10 +1,11 @@
 use jelly::prelude::*;
-use jelly::actix_web::{HttpRequest, web::Form};
+use jelly::actix_web::{HttpRequest, HttpResponse, web::Form};
 use jelly::request::{Authentication, DatabasePool};
 use jelly::Result;
 
 use crate::accounts::Account;
 use crate::accounts::forms::LoginForm;
+use jelly::tera::Context;
 
 /// The login form.
 pub async fn form(request: HttpRequest) -> Result<HttpResponse> {

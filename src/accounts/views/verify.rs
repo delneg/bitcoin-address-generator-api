@@ -1,7 +1,8 @@
 use jelly::prelude::*;
 use jelly::accounts::User;
-use jelly::actix_web::{HttpRequest, web::Path};
+use jelly::actix_web::{HttpRequest,HttpResponse, web::Path};
 use jelly::request::DatabasePool;
+use jelly::tera::Context;
 use jelly::Result;
 
 use crate::accounts::Account;
