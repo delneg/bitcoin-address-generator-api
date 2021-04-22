@@ -14,6 +14,8 @@ serde = { version = "1" }
 secp256k1 = {version = "0.20.1", features = ["rand"]}
 rand = {version = "0.6.5", features = ["std"]}
 bitcoin = "0.26.0"
+#tiny-keccak = {version = "", features=["keccak"]}
+tiny-keccak = "1.2.2"
 
 [features]
 default = ["jelly/template_watcher", "jelly/static"]
